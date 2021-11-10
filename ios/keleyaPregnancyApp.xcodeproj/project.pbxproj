@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* keleyaPregnancyAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* keleyaPregnancyAppTests.m */; };
+		1263C08D540E4A74B4B80ECE /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E65AB9CA30F40E79FE2F637 /* Entypo.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4A8C88B7C0D248329A900880 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD622D891FFF4C6887E8CBBF /* Foundation.ttf */; };
+		533DB8825ED64EA6ADCDC074 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAC1F453817343AB98E7EFF6 /* MaterialCommunityIcons.ttf */; };
+		5444B2FAB1034DC69C7050C5 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03D361A6D2943429782F7E3 /* AntDesign.ttf */; };
+		58A9552F9C9E49759B88E89B /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFE332451E294D9E9B92DF0D /* Fontisto.ttf */; };
+		5EF37F8D6FF34988A3124A1F /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CF82404228440FFB9B4BFA0 /* Feather.ttf */; };
+		605CA2F2C6024D968BA2EA60 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0452A4C4EBD54ACCAEE62EA0 /* Ionicons.ttf */; };
 		6172F2D35A4C3AA820D92908 /* libPods-keleyaPregnancyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-keleyaPregnancyApp.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-keleyaPregnancyApp-keleyaPregnancyAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-keleyaPregnancyApp-keleyaPregnancyAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9CF442BCA9ED449F90BE8C51 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D3631C97CDB4A6987A49D8E /* Zocial.ttf */; };
+		9D3CF7FA03C148F89693E007 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA86C9012E10450F8879104B /* FontAwesome5_Regular.ttf */; };
+		A0DE326B973E4268923B08A8 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 999E449F4F7043CC97D18AA4 /* FontAwesome5_Solid.ttf */; };
+		AFA8F70884FB497F93FAEB1A /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FAAC0C5C7694ED9B94603EB /* MaterialIcons.ttf */; };
+		CC209F44664749E68168C77E /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A4C8ED480A642EF94CE7C8E /* FontAwesome5_Brands.ttf */; };
+		CC22E78F51A84888A89A81F5 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E699BCD18700487A92C08989 /* Octicons.ttf */; };
+		D77E9C0AEBC44667A9158CE9 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 79801FAE5F794077A7A842D5 /* EvilIcons.ttf */; };
+		D8EF9EE6096441B9B879E605 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB9FDF429B0146F2BC10A82A /* SimpleLineIcons.ttf */; };
+		E5475571B75345AE96B36BF4 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C42C03468F4444EEBDF090E5 /* FontAwesome.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +46,7 @@
 		00E356EE1AD99517003FC87E /* keleyaPregnancyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keleyaPregnancyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* keleyaPregnancyAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keleyaPregnancyAppTests.m; sourceTree = "<group>"; };
+		0452A4C4EBD54ACCAEE62EA0 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* keleyaPregnancyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keleyaPregnancyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = keleyaPregnancyApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = keleyaPregnancyApp/AppDelegate.m; sourceTree = "<group>"; };
@@ -37,13 +54,28 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = keleyaPregnancyApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = keleyaPregnancyApp/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-keleyaPregnancyApp-keleyaPregnancyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keleyaPregnancyApp-keleyaPregnancyAppTests.release.xcconfig"; path = "Target Support Files/Pods-keleyaPregnancyApp-keleyaPregnancyAppTests/Pods-keleyaPregnancyApp-keleyaPregnancyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1E65AB9CA30F40E79FE2F637 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		3A4C8ED480A642EF94CE7C8E /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		5FAAC0C5C7694ED9B94603EB /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-keleyaPregnancyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keleyaPregnancyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-keleyaPregnancyApp-keleyaPregnancyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keleyaPregnancyApp-keleyaPregnancyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-keleyaPregnancyApp-keleyaPregnancyAppTests/Pods-keleyaPregnancyApp-keleyaPregnancyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D3631C97CDB4A6987A49D8E /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		79801FAE5F794077A7A842D5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = keleyaPregnancyApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CF82404228440FFB9B4BFA0 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		999E449F4F7043CC97D18AA4 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-keleyaPregnancyApp-keleyaPregnancyAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-keleyaPregnancyApp-keleyaPregnancyAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD622D891FFF4C6887E8CBBF /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		AFE332451E294D9E9B92DF0D /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		C0A881CF5CF3F2B244570E2A /* Pods-keleyaPregnancyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keleyaPregnancyApp.debug.xcconfig"; path = "Target Support Files/Pods-keleyaPregnancyApp/Pods-keleyaPregnancyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C42C03468F4444EEBDF090E5 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		CAC1F453817343AB98E7EFF6 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-keleyaPregnancyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keleyaPregnancyApp.release.xcconfig"; path = "Target Support Files/Pods-keleyaPregnancyApp/Pods-keleyaPregnancyApp.release.xcconfig"; sourceTree = "<group>"; };
+		E699BCD18700487A92C08989 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		EA86C9012E10450F8879104B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F03D361A6D2943429782F7E3 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		FB9FDF429B0146F2BC10A82A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +154,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				A82D460669284E879D677A0A /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +168,30 @@
 				00E356EE1AD99517003FC87E /* keleyaPregnancyAppTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A82D460669284E879D677A0A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F03D361A6D2943429782F7E3 /* AntDesign.ttf */,
+				1E65AB9CA30F40E79FE2F637 /* Entypo.ttf */,
+				79801FAE5F794077A7A842D5 /* EvilIcons.ttf */,
+				8CF82404228440FFB9B4BFA0 /* Feather.ttf */,
+				C42C03468F4444EEBDF090E5 /* FontAwesome.ttf */,
+				3A4C8ED480A642EF94CE7C8E /* FontAwesome5_Brands.ttf */,
+				EA86C9012E10450F8879104B /* FontAwesome5_Regular.ttf */,
+				999E449F4F7043CC97D18AA4 /* FontAwesome5_Solid.ttf */,
+				AFE332451E294D9E9B92DF0D /* Fontisto.ttf */,
+				AD622D891FFF4C6887E8CBBF /* Foundation.ttf */,
+				0452A4C4EBD54ACCAEE62EA0 /* Ionicons.ttf */,
+				CAC1F453817343AB98E7EFF6 /* MaterialCommunityIcons.ttf */,
+				5FAAC0C5C7694ED9B94603EB /* MaterialIcons.ttf */,
+				E699BCD18700487A92C08989 /* Octicons.ttf */,
+				FB9FDF429B0146F2BC10A82A /* SimpleLineIcons.ttf */,
+				6D3631C97CDB4A6987A49D8E /* Zocial.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
@@ -245,6 +302,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5444B2FAB1034DC69C7050C5 /* AntDesign.ttf in Resources */,
+				1263C08D540E4A74B4B80ECE /* Entypo.ttf in Resources */,
+				D77E9C0AEBC44667A9158CE9 /* EvilIcons.ttf in Resources */,
+				5EF37F8D6FF34988A3124A1F /* Feather.ttf in Resources */,
+				E5475571B75345AE96B36BF4 /* FontAwesome.ttf in Resources */,
+				CC209F44664749E68168C77E /* FontAwesome5_Brands.ttf in Resources */,
+				9D3CF7FA03C148F89693E007 /* FontAwesome5_Regular.ttf in Resources */,
+				A0DE326B973E4268923B08A8 /* FontAwesome5_Solid.ttf in Resources */,
+				58A9552F9C9E49759B88E89B /* Fontisto.ttf in Resources */,
+				4A8C88B7C0D248329A900880 /* Foundation.ttf in Resources */,
+				605CA2F2C6024D968BA2EA60 /* Ionicons.ttf in Resources */,
+				533DB8825ED64EA6ADCDC074 /* MaterialCommunityIcons.ttf in Resources */,
+				AFA8F70884FB497F93FAEB1A /* MaterialIcons.ttf in Resources */,
+				CC22E78F51A84888A89A81F5 /* Octicons.ttf in Resources */,
+				D8EF9EE6096441B9B879E605 /* SimpleLineIcons.ttf in Resources */,
+				9CF442BCA9ED449F90BE8C51 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

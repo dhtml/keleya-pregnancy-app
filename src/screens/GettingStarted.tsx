@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 
 const data = [
   {
-    text: 'For a fit and relaxed pregnancy',
+    text: 'For a fit and relaxed pregnancy 1',
     bgImage: require('../../assets/slides/first-intro-image.png'),
   },
   {
@@ -27,6 +27,57 @@ const data = [
 ];
 
 type Item = typeof data[0];
+
+export default class GettingStarted extends React.Component {
+  _renderItem = ({item}: {item: Item}) => {
+    return (
+      <View style={styles.slide}>
+        <ImageBackground
+          source={item.bgImage}
+          resizeMode="cover"
+          style={styles.slideBg}>
+          <View style={styles.logoWrapper}>
+            <Image
+              style={styles.logo}
+              width={Dimensions.get('window').width / 6}
+              source={require('../../assets/logo.png')}
+            />
+          </View>
+          <View style={styles.textWrapper}>
+            <Text style={styles.text}>{item.text}</Text>
+          </View>
+        </ImageBackground>
+        <View style={styles.bottom}>
+          <View style={styles.buttonWrapper}>
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>Get Started</Text>
+            </TouchableOpacity>
+          </View>
+          <View style={styles.loginTextWrapper}>
+            <Text style={styles.loginText}>Or Login</Text>
+          </View>
+        </View>
+      </View>
+    );
+  };
+
+  _keyExtractor = (item: Item) => item.text;
+
+  render() {
+    return (
+      <View style={{flex: 1}}>
+        <AppIntroSlider
+          keyExtractor={this._keyExtractor}
+          renderItem={this._renderItem}
+          activeDotStyle={{backgroundColor: 'rgba(105, 192, 186, 1)'}}
+          dotStyle={{backgroundColor: 'rgba(210, 236, 234, 1)'}}
+          data={data}
+        />
+        <Footer />
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   slide: {
@@ -94,51 +145,3 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
 });
-
-export default class GettingStarted extends React.Component {
-  _renderItem = ({item}: {item: Item}) => {
-    return (
-      <View style={styles.slide}>
-        <ImageBackground source={item.bgImage}  resizeMode='cover' style={styles.slideBg}>
-          <View style={styles.logoWrapper}>
-            <Image
-              style={styles.logo}
-              width={Dimensions.get('window').width / 6}
-              source={require('../../assets/logo.png')}
-            />
-          </View>
-          <View style={styles.textWrapper}>
-            <Text style={styles.text}>{item.text}</Text>
-          </View>
-        </ImageBackground>
-        <View style={styles.bottom}>
-          <View style={styles.buttonWrapper}>
-            <TouchableOpacity style={styles.button}>
-              <Text style={styles.buttonText}>Get Started</Text>
-            </TouchableOpacity>
-          </View>
-          <View style={styles.loginTextWrapper}>
-            <Text style={styles.loginText}>Or Login</Text>
-          </View>
-        </View>
-      </View>
-    );
-  };
-
-  _keyExtractor = (item: Item) => item.text;
-
-  render() {
-    return (
-      <View style={{flex: 1}}>
-        <AppIntroSlider
-          keyExtractor={this._keyExtractor}
-          renderItem={this._renderItem}
-          activeDotStyle={{backgroundColor: 'rgba(105, 192, 186, 1)'}}
-          dotStyle={{backgroundColor: 'rgba(210, 236, 234, 1)'}}
-          data={data}
-        />
-        <Footer />
-      </View>
-    );
-  }
-}
