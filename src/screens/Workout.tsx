@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import Footer from '../components/Footer';
 import {SpinPicker} from 'react-native-spin-picker';
+import {NavigationScreenProp} from 'react-navigation';
 
 const text = {
   header: 'How many times a week do you want to be active?',
@@ -16,13 +17,14 @@ const text = {
 
 interface Props {
   title?: string;
+  navigation: NavigationScreenProp<any, any>;
 }
 
 type State = {
   selectedItem: string;
 };
 
-export default class Active extends React.Component<Props, State> {
+export default class Workout extends React.Component<Props, State> {
   state: State = {
     selectedItem: '3 times a week',
   };
@@ -59,7 +61,11 @@ export default class Active extends React.Component<Props, State> {
           />
 
           <View style={styles.viewFooter}>
-            <TouchableOpacity style={styles.createAccountBtn}>
+            <TouchableOpacity
+              style={styles.createAccountBtn}
+              onPress={() => {
+                this.props.navigation.navigate('Success');
+              }}>
               <Text style={styles.createAccountText}>{text.continue}</Text>
             </TouchableOpacity>
           </View>

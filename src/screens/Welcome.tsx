@@ -10,6 +10,7 @@ import {
 import AppIntroSlider from 'react-native-app-intro-slider';
 import Image from 'react-native-scalable-image';
 import Footer from '../components/Footer';
+import {NavigationScreenProp} from 'react-navigation';
 
 const data = [
   {
@@ -28,7 +29,11 @@ const data = [
 
 type Item = typeof data[0];
 
-export default class GettingStarted extends React.Component {
+export interface Props {
+  navigation: NavigationScreenProp<any, any>;
+}
+
+export default class Welcome extends React.Component<Props> {
   _renderItem = ({item}: {item: Item}) => {
     return (
       <View style={styles.slide}>
@@ -49,12 +54,17 @@ export default class GettingStarted extends React.Component {
         </ImageBackground>
         <View style={styles.bottom}>
           <View style={styles.buttonWrapper}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity
+              style={styles.button}
+              onPress={() => this.props.navigation.navigate('Signup')}>
               <Text style={styles.buttonText}>Get Started</Text>
             </TouchableOpacity>
           </View>
           <View style={styles.loginTextWrapper}>
-            <Text style={styles.loginText}>Or Login</Text>
+            <TouchableOpacity
+              onPress={() => this.props.navigation.navigate('SignIn')}>
+              <Text style={styles.loginText}>Or Login</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </View>

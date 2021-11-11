@@ -22,7 +22,7 @@ type State = {
   title?: string;
 };
 
-export default class Notifications extends React.Component<Props, State> {
+export default class Success extends React.Component<Props, State> {
   render() {
     return (
       <View style={styles.container}>

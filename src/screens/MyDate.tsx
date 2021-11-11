@@ -9,6 +9,7 @@ import {
 import Image from 'react-native-scalable-image';
 import Footer from '../components/Footer';
 import DatePicker from 'react-native-date-picker';
+import {NavigationScreenProp} from 'react-navigation';
 
 const text = {
   header: 'When is your baby due, Sam?',
@@ -18,10 +19,12 @@ const text = {
 
 interface Props {
   title?: string;
+  navigation: NavigationScreenProp<any, any>;
 }
 
 type State = {
-  open: any;
+  open: boolean;
+  activate: boolean;
   date: Date;
 };
 
@@ -44,6 +47,7 @@ export default class MyDate extends React.Component<Props, State> {
   state: State = {
     open: false,
     date: new Date(2021, 7, 19, 12),
+    activate: false,
   };
   render() {
     return (
@@ -52,7 +56,7 @@ export default class MyDate extends React.Component<Props, State> {
           <Image
             style={styles.image}
             width={Dimensions.get('window').width}
-            source={require('../../assets/couch_smile.jpg')}
+            source={require('../../assets/due-date-background-image.jpg')}
           />
         </View>
         <View style={styles.form}>
@@ -63,7 +67,7 @@ export default class MyDate extends React.Component<Props, State> {
             open={this.state.open}
             date={this.state.date}
             onConfirm={date => {
-              this.setState({open: false, date: date});
+              this.setState({open: false, date: date, activate: true});
             }}
             onCancel={() => {
               this.setState({open: false});
@@ -81,7 +85,17 @@ export default class MyDate extends React.Component<Props, State> {
           </View>
 
           <View style={styles.viewFooter}>
-            <TouchableOpacity style={styles.createAccountBtn}>
+            <TouchableOpacity
+              onPress={() => {
+                if (this.state.activate) {
+                  this.props.navigation.navigate('Workout');
+                }
+              }}
+              style={
+                this.state.activate
+                  ? styles.activatedButton
+                  : styles.createAccountBtn
+              }>
               <Text style={styles.createAccountText}>{text.continue}</Text>
             </TouchableOpacity>
           </View>
@@ -148,6 +162,17 @@ const styles = StyleSheet.create({
     fontSize: 16,
     alignItems: 'center',
     backgroundColor: '#9b9b9b',
+    padding: 10,
+    borderRadius: 10,
+    borderWidth: 1,
+  },
+  activatedButton: {
+    position: 'absolute',
+    width: '100%',
+    bottom: 35,
+    fontSize: 16,
+    alignItems: 'center',
+    backgroundColor: '#69C0BA',
     padding: 10,
     borderRadius: 10,
     borderWidth: 1,

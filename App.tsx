@@ -1,70 +1,65 @@
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
-import GettingStarted from './src/screens/GettingStarted';
-import Login from './src/screens/Login';
-import Register from './src/screens/Register';
+import Welcome from './src/screens/Welcome';
+import SignIn from './src/screens/SignIn';
+import Signup from './src/screens/Signup';
 import Name from './src/screens/Name';
 import MyDate from './src/screens/MyDate';
-import Active from './src/screens/Active';
-import Notifications from './src/screens/Notifications';
+import Workout from './src/screens/Workout';
+import Success from './src/screens/Success';
 import React from 'react';
 
 const AppNavigator = createStackNavigator(
   {
-    Started: {
-      screen: GettingStarted,
+    Welcome: {
+      screen: Welcome,
       navigationOptions: {
         headerShown: false,
       },
     },
-    Login: {
-      screen: Login,
+    SignIn: {
+      screen: SignIn,
       navigationOptions: {
-        headerShown: false,
+        headerShown: true,
       },
     },
-    Register: {
-      screen: Register,
+    Signup: {
+      screen: Signup,
       navigationOptions: {
-        headerShown: false,
+        headerShown: true,
       },
     },
     Name: {
       screen: Name,
       navigationOptions: {
-        headerShown: false,
+        headerShown: true,
       },
     },
     MyDate: {
       screen: MyDate,
       navigationOptions: {
-        headerShown: false,
+        headerShown: true,
       },
     },
-    Active: {
-      screen: Active,
+    Workout: {
+      screen: Workout,
       navigationOptions: {
-        headerShown: false,
+        headerShown: true,
       },
     },
-    Notifications: {
-      screen: Notifications,
+    Success: {
+      screen: Success,
       navigationOptions: {
-        headerShown: false,
+        headerShown: true,
       },
     },
   },
   {
-    initialRouteName: 'Started',
-    //initialRouteName: 'Register',
-    //initialRouteName: 'Login',
-    //initialRouteName: 'Name',
-    //initialRouteName: 'MyDate',
-    //initialRouteName: 'Notifications',
-    //initialRouteName: 'Active',
+    initialRouteName: 'Welcome',
     defaultNavigationOptions: {
-      title: 'Mini Onboarding',
-      //headerShown: false,
+      title: '',
+      headerShown: true,
+      headerTransparent: true,
     },
   },
 );

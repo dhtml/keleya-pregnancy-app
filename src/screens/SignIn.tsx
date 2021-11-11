@@ -9,13 +9,15 @@ import {
 } from 'react-native';
 import Image from 'react-native-scalable-image';
 import Footer from '../components/Footer';
+import Password from '../components/Password';
 import {NavigationScreenProp} from 'react-navigation';
+const validator = require('validator');
 
 const text = {
-  header:
-    "It's great that you're here! First things first, what should we call you?",
-  label: 'Your Name',
-  continue: 'Continue',
+  header: 'Welcome back!',
+  password: 'Enter a password',
+  forgotten: 'Have you forgotten your password?',
+  create: 'Log in',
 };
 
 interface Props {
@@ -23,14 +25,22 @@ interface Props {
   navigation: NavigationScreenProp<any, any>;
 }
 
-const Name: React.FC<Props> = props => {
-  const [name, setName] = useState<string>('');
+const SignIn: React.FC<Props> = props => {
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
   const [activate, setActivate] = useState<boolean>(false);
 
   useEffect(() => {
     //validation
-    setActivate(name.length > 1);
-  }, [name]);
+    setActivate(false);
+    if (!validator.isEmail(email)) {
+      return;
+    }
+    if (password.length < 1) {
+      return;
+    }
+    setActivate(true);
+  }, [email, password]);
 
   return (
     <View style={styles.container}>
@@ -38,7 +48,7 @@ const Name: React.FC<Props> = props => {
         <Image
           style={styles.image}
           width={Dimensions.get('window').width}
-          source={require('../../assets/couch_smile.jpg')}
+          source={require('../../assets/authentication-background-image.jpg')}
         />
       </View>
       <View style={styles.form}>
@@ -46,25 +56,40 @@ const Name: React.FC<Props> = props => {
 
         <View style={styles.inputView}>
           <TextInput
-            value={name}
+            value={email}
             style={styles.TextInput}
-            placeholder={text.label}
+            placeholder="example@gmail.com"
             placeholderTextColor="#4a4a4a"
-            onChangeText={name => {
-              setName(name);
+            onChangeText={email => {
+              setEmail(email);
             }}
           />
         </View>
 
+        <View style={styles.inputView}>
+          <Password
+            value={password}
+            label={text.password}
+            onValueChange={password => {
+              setPassword(password);
+            }}
+            height={40}
+          />
+        </View>
+
         <View style={styles.viewFooter}>
+          <TouchableOpacity style={styles.forgotBtn}>
+            <Text style={styles.forgotText}>{text.forgotten}</Text>
+          </TouchableOpacity>
+
           <TouchableOpacity
             onPress={() => {
               if (activate) {
-                props.navigation.navigate('MyDate');
+                props.navigation.navigate('Success');
               }
             }}
             style={activate ? styles.activatedButton : styles.createAccountBtn}>
-            <Text style={styles.createAccountText}>{text.continue}</Text>
+            <Text style={styles.createAccountText}>{text.create}</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -82,20 +107,20 @@ const styles = StyleSheet.create({
   },
 
   imageHeader: {
-    flex: 1.2,
+    flex: 1,
   },
   image: {
     flex: 1,
   },
 
   form: {
-    flex: 1,
-    marginLeft: 25,
-    marginRight: 25,
+    flex: 2,
+    marginLeft: 15,
+    marginRight: 15,
     alignSelf: 'stretch',
   },
   headerText: {
-    fontSize: 22,
+    fontSize: 24,
     color: 'rgba(74, 74, 74, 0.8)',
     textAlign: 'center',
     marginTop: 15,
@@ -104,6 +129,12 @@ const styles = StyleSheet.create({
   inputView: {
     alignSelf: 'stretch',
     marginBottom: 20,
+  },
+  checkbox: {
+    alignSelf: 'center',
+  },
+  label: {
+    margin: 8,
   },
   TextInput: {
     height: 40,
@@ -143,5 +174,18 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 16,
   },
+  forgotBtn: {
+    width: '100%',
+    fontSize: 16,
+    alignItems: 'center',
+    padding: 10,
+    marginBottom: 15,
+  },
+  forgotText: {
+    color: '#9b9b9b',
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
 });
-export default Name;
+
+export default SignIn;
