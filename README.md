@@ -39,3 +39,9 @@ This was used to create checkboxes on the registration page
 
 6. Password toggle
 The password component was recreated into typescript and I made some ammendments to this from the concept here : https://github.com/mdmoin7/react-native-hide-show-password
+
+
+Data Storage:
+1. I would ensure that I connect to a secure RESTFUL API for authentication, registration e.t.c
+2. In order to store information such as user token / session data into the device, I will ensure that I store this using the keychain provided by the device as this provides better security than regular device storage.
+3. While exchanging data over the API, I will ensure that information is encrypted, so I will not be sending unencrypted user password over the https
