@@ -6,6 +6,7 @@ import Register from './src/screens/Register';
 import Name from './src/screens/Name';
 import MyDate from './src/screens/MyDate';
 import Active from './src/screens/Active';
+import Notifications from './src/screens/Notifications';
 import React from 'react';
 
 const AppNavigator = createStackNavigator(
@@ -46,14 +47,21 @@ const AppNavigator = createStackNavigator(
         headerShown: false,
       },
     },
+    Notifications: {
+      screen: Notifications,
+      navigationOptions: {
+        headerShown: false,
+      },
+    },
   },
   {
-    //initialRouteName: 'Started',
+    initialRouteName: 'Started',
     //initialRouteName: 'Register',
     //initialRouteName: 'Login',
     //initialRouteName: 'Name',
     //initialRouteName: 'MyDate',
-    initialRouteName: 'Active',
+    //initialRouteName: 'Notifications',
+    //initialRouteName: 'Active',
     defaultNavigationOptions: {
       title: 'Mini Onboarding',
       //headerShown: false,

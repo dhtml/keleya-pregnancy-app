@@ -27,14 +27,14 @@ interface Props {
 type State = {
   selected_privacy: boolean;
   selected_terms: boolean;
-  password: boolean;
+  password: string;
 };
 
 export default class Register extends React.Component<Props, State> {
   state: State = {
     selected_privacy: false,
     selected_terms: false,
-    password: true,
+    password: '',
   };
   render() {
     return (
@@ -58,7 +58,15 @@ export default class Register extends React.Component<Props, State> {
           </View>
 
           <View style={styles.inputView}>
-            <Password value={''} label={text.password} height={40} />
+            <Password
+              value={''}
+              label={text.password}
+              onValueChange={password => {
+                this.setState({password});
+                console.log(password);
+              }}
+              height={40}
+            />
           </View>
 
           <View style={styles.checkboxContainer}>

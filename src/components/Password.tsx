@@ -6,6 +6,7 @@ interface Props {
   value: string;
   label: string;
   height: number;
+  onValueChange: (value: string) => void;
   style?: ViewStyle | ViewStyle[];
 }
 
@@ -41,6 +42,7 @@ export default class Password extends React.Component<Props, State> {
             }}
             onChangeText={text => {
               this.setState({value: text});
+              this.props.onValueChange(text);
             }}
             onBlur={() => {}}
             value={this.state.value}

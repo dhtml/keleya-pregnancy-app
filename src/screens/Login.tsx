@@ -23,12 +23,12 @@ interface Props {
 }
 
 type State = {
-  password: boolean;
+  password: string;
 };
 
 export default class Login extends React.Component<Props, State> {
   state: State = {
-    password: true,
+    password: '',
   };
   render() {
     return (
@@ -55,7 +55,10 @@ export default class Login extends React.Component<Props, State> {
             <Password
               value={''}
               label={text.password}
-              //onChange={(password: any) => this.setState({password: password})}
+              onValueChange={password => {
+                this.setState({password});
+                console.log(password);
+              }}
               height={40}
             />
           </View>
